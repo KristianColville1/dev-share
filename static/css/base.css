@@ -1,3 +1,51 @@
 /* Google fonts for project - Taken from: https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
+:root {
+    --space-cadet: #222e50ff;
+    --english-violet: #5a4d68ff;
+    --mountbatten-pink: #916c80ff;
+    --light-slate-gray: #758f9aff;
+    --baby-powder: #fcfff7ff;
+    --middle-blue-green: #8fd0ccff;
+    --viridian-green: #21a0a0ff;
+    --blue-munsell: #2c8c99ff;
+    --teal-blue: #3e7784ff;
+}
+
+.navbar,
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+    background-color: var(--blue-munsell);
+}
+
+.navbar-brand,
+.nav-link,
+.fa-house,
+.fa-users-line,
+.fa-comment,
+.fa-bell {
+    color: var(--baby-powder);
+    text-shadow: 3px 2px 5px var(--space-cadet);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.active {
+    color: var(--space-cadet) !important;
+    text-shadow: 3px 2px 5px var(--light-slate-gray);
+}
+
+.fa-house,
+.fa-users-line,
+.fa-comment,
+.fa-bell {
+    width: 100%;
+}
