@@ -1,6 +1,8 @@
 /* Google fonts for project - Taken from: https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
+
+/**********************************************************Default colors*/
 :root {
     --space-cadet: #222e50ff;
     --english-violet: #5a4d68ff;
@@ -13,6 +15,7 @@
     --teal-blue: #3e7784ff;
 }
 
+/**********************************************************Navigation*/
 .navbar,
 h1,
 h2,
@@ -48,4 +51,25 @@ h3 {
 .fa-comment,
 .fa-bell {
     width: 100%;
+}
+
+/**************************************************************Search box form */
+.form-control,
+.btn-info {
+    height: 32px;
+    border-radius: 32px;
+}
+
+.btn-info {
+    margin: 0;
+    padding: 0;
+    width: 40px;
+}
+
+.btn-info:hover {
+    background-color: var(--middle-blue-green);
+}
+
+.btn-info:hover .fa-magnifying-glass {
+    color: var(--baby-powder);
 }
