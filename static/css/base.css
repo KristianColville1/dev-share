@@ -30,15 +30,15 @@ footer {
 
 .navbar {
     background-color: var(--snow);
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 2px;
-    color: var(--star-command-blue);
-    text-shadow:  1px 1px 1px var(--rich-black-fogra-39);
+    color: var(--middle-blue-green);
+    text-shadow: 1px 1px 1px var(--rich-black-fogra-39);
     margin-left: 20px;
 }
 
@@ -83,7 +83,7 @@ i:hover {
     background-color: var(--middle-blue-green);
 }
 
-.nav-item > a {
+.nav-item>a {
     padding: 5px;
 }
 
@@ -94,7 +94,8 @@ i:hover {
 .dropdown,
 .dropdown:hover {
     color: var(--rich-black-fogra-39);
-    background-color: transparent; /* put user img here */
+    background-color: transparent;
+    /* put user img here */
 }
 
 /**********************************************************Search box form */
@@ -137,30 +138,37 @@ footer .row {
 
 .social {
     min-height: 70px;
-    background-color: var(--middle-blue-green);
+    background-color: var(--rich-black-fogra-39);
+}
+
+.social-heading {
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--middle-blue-green);
 }
 
 .footer-info {
     min-height: 70px;
-    background-color: var(--star-command-blue);
+    background-color: var(--middle-blue-green);
 }
 
 .copyright {
     width: fit-content;
     color: var(--snow);
 }
+
 .social-link {
     font-size: 1.9rem;
-    margin: 5px;
-}
-
-.social-link {
-    width: 90px;
+    width: 30px;
     text-decoration: none;
-    color: var(--rich-black-fogra-39) !important;
+    color: var(--snow);
     cursor: pointer;
+    margin: 10px;
 }
 
-.social-link:hover {
+.social-link:hover i {
     text-decoration: none !important;
+    color: var(--middle-blue-green);
 }
