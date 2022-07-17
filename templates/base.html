@@ -31,9 +31,10 @@
 <body>
 
   {% comment %} Nav {% endcomment %}
-  <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">DevShare</a>
+  <nav class="container-fluid navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-share-nodes"></i>DevShare
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -46,7 +47,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <ul class="navbar-nav nav-fill ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mx-auto mb-lg-0">
           <li class="nav-item active">
             <a class="nav-link" aria-current="page" href="#" data-toggle="tooltip" data-placement="bottom" title="Home">
               <i class="fa-solid fa-house"></i>
@@ -69,8 +70,8 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              'Users name'
+              aria-expanded="false" data-toggle="tooltip" data-placement="bottom" title="User Profile">
+              <i class="fa-solid fa-user"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="#">Action</a></li>
@@ -82,9 +83,7 @@
             </ul>
           </li>
         </ul>
-
       </div>
-    </div>
   </nav>
   {% comment %} Main {% endcomment %}
   <main>
@@ -92,7 +91,18 @@
     {% endblock%}
   </main>
   {% comment %} Footer {% endcomment %}
-
+  <footer class="container-fluid">
+    <div class="row social">
+          <a href="#" class="social-link"><i class="fa-brands fa-stack-overflow"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    <div class="row footer-info">
+        <div class="copyright">
+          &copy; 2022 <i class="fa-solid fa-share-nodes"></i>DevShare | All Rights Reserved
+        </div>
+    </div>
+  </footer>
   {% comment %} Font Awesome Icons {% endcomment %}
   <script src="https://kit.fontawesome.com/0d880835d2.js" crossorigin="anonymous"></script>
 </body>

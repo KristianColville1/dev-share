@@ -1,7 +1,6 @@
 /* Google fonts for project - Taken from: https://fonts.google.com/ */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
 
-
 /**********************************************************Default colors*/
 :root {
     --snow: #fffbfeff;
@@ -17,40 +16,54 @@
 /**********************************************************Navigation*/
 
 body {
-    background-color: var(--raisin-black);
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .navbar,
 h1,
 h2,
-h3 {
+h3,
+footer {
     font-family: 'Oswald', sans-serif;
 }
 
 .navbar {
     background-color: var(--snow);
-    padding-right: 60px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 }
 
 .navbar-brand {
     font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
     color: var(--star-command-blue);
-    text-shadow:  1px 1px 3px var(--middle-blue-green);
+    text-shadow:  1px 1px 1px var(--rich-black-fogra-39);
+    margin-left: 20px;
+}
+
+.fa-share-nodes {
+    color: var(--rich-black-fogra-39);
+    margin-right: 5px;
 }
 
 .fa-house,
 .fa-users,
 .fa-comment,
 .fa-bell,
-.fa-magnifying-glass {
-    font-size: 1.3rem;
+.fa-magnifying-glass,
+.fa-user {
+    font-size: 1.1rem;
     color: var(--rich-black-fogra-39);
     text-shadow: 1px 1px 3px var(--raisin-black);
 }
 
 i:hover {
-    color: var(--star-command-blue);
+    color: var(--snow);
+}
+
+.fa-user:hover {
+    color: var(--rich-black-fogra-39);
 }
 
 .nav-item,
@@ -63,7 +76,7 @@ i:hover {
     justify-content: center;
     border-radius: 50%;
     background-color: var(--spanish-gray);
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 .active {
@@ -74,16 +87,25 @@ i:hover {
     padding: 5px;
 }
 
-.dropdown {
-    border: none;
+.nav-item:hover {
+    background-color: var(--middle-blue-green);
+}
+
+.dropdown,
+.dropdown:hover {
+    color: var(--rich-black-fogra-39);
     background-color: transparent; /* put user img here */
 }
 
-/**************************************************************Search box form */
+/**********************************************************Search box form */
 .form-control,
 .btn-info {
     height: 45px;
     border-radius: 32px;
+}
+
+.btn-info {
+    border: none;
 }
 
 .btn-info {
@@ -97,4 +119,48 @@ i:hover {
 
 .fa-magnifying-glass {
     color: var(--snow);
+}
+
+/**********************************************************Footer*/
+footer {
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+}
+
+footer .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social {
+    min-height: 70px;
+    background-color: var(--middle-blue-green);
+}
+
+.footer-info {
+    min-height: 70px;
+    background-color: var(--star-command-blue);
+}
+
+.copyright {
+    width: fit-content;
+    color: var(--snow);
+}
+.social-link {
+    font-size: 1.9rem;
+    margin: 5px;
+}
+
+.social-link {
+    width: 90px;
+    text-decoration: none;
+    color: var(--rich-black-fogra-39) !important;
+    cursor: pointer;
+}
+
+.social-link:hover {
+    text-decoration: none !important;
 }
