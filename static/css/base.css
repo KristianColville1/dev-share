@@ -4,18 +4,23 @@
 
 /**********************************************************Default colors*/
 :root {
-    --space-cadet: #222e50ff;
-    --english-violet: #5a4d68ff;
-    --mountbatten-pink: #916c80ff;
-    --light-slate-gray: #758f9aff;
-    --baby-powder: #fcfff7ff;
-    --middle-blue-green: #8fd0ccff;
-    --viridian-green: #21a0a0ff;
-    --blue-munsell: #2c8c99ff;
-    --teal-blue: #3e7784ff;
+    --snow: #fffbfeff;
+    --spanish-gray: #929195ff;
+    --raisin-black: #24272bff;
+    --rich-black-fogra-39: #07070aff;
+    --indigo-dye: #044264ff;
+    --star-command-blue: #007cbeff;
+    --pacific-blue: #42acc7ff;
+    --middle-blue-green: #84dccfff;
 }
 
 /**********************************************************Navigation*/
+
+body {
+    background-color: var(--raisin-black);
+    overflow-x: hidden;
+}
+
 .navbar,
 h1,
 h2,
@@ -24,52 +29,72 @@ h3 {
 }
 
 .navbar {
-    background-color: var(--blue-munsell);
-}
-
-.navbar-brand,
-.nav-link,
-.fa-house,
-.fa-users-line,
-.fa-comment,
-.fa-bell {
-    color: var(--baby-powder);
-    text-shadow: 3px 2px 5px var(--space-cadet);
+    background-color: var(--snow);
+    padding-right: 60px;
 }
 
 .navbar-brand {
     font-size: 2rem;
-}
-
-.active {
-    color: var(--space-cadet) !important;
-    text-shadow: 3px 2px 5px var(--light-slate-gray);
+    color: var(--star-command-blue);
+    text-shadow:  1px 1px 3px var(--middle-blue-green);
 }
 
 .fa-house,
-.fa-users-line,
+.fa-users,
 .fa-comment,
-.fa-bell {
-    width: 100%;
+.fa-bell,
+.fa-magnifying-glass {
+    font-size: 1.3rem;
+    color: var(--rich-black-fogra-39);
+    text-shadow: 1px 1px 3px var(--raisin-black);
+}
+
+i:hover {
+    color: var(--star-command-blue);
+}
+
+.nav-item,
+.active,
+.btn-info {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--spanish-gray);
+    margin-left: 5px;
+}
+
+.active {
+    background-color: var(--middle-blue-green);
+}
+
+.nav-item > a {
+    padding: 5px;
+}
+
+.dropdown {
+    border: none;
+    background-color: transparent; /* put user img here */
 }
 
 /**************************************************************Search box form */
 .form-control,
 .btn-info {
-    height: 32px;
+    height: 45px;
     border-radius: 32px;
 }
 
 .btn-info {
-    margin: 0;
-    padding: 0;
-    width: 40px;
+    width: 45px;
+    background-color: var(--rich-black-fogra-39);
 }
 
 .btn-info:hover {
     background-color: var(--middle-blue-green);
 }
 
-.btn-info:hover .fa-magnifying-glass {
-    color: var(--baby-powder);
+.fa-magnifying-glass {
+    color: var(--snow);
 }
