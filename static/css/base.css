@@ -13,8 +13,6 @@
     --middle-blue-green: #84dccfff;
 }
 
-/**********************************************************Navigation*/
-
 body {
     overflow-x: hidden;
     min-height: 100vh;
@@ -28,6 +26,13 @@ footer {
     font-family: 'Oswald', sans-serif;
 }
 
+form {
+    width: fit-content;
+    background-color: var(--snow);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/**********************************************************Navigation*/
 .navbar {
     background-color: var(--snow);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
@@ -183,4 +188,15 @@ footer .row {
     text-decoration: none !important;
     color: var(--middle-blue-green);
     transition: color .3s ease-in-out;
+}
+
+/**********************************************************Home page*/
+.home {
+    min-height: 100vh;
+    background-color: var(--middle-blue-green);
+}
+
+.home-logo {
+    font-weight: 700;
+    font-size: 3rem;
 }
