@@ -60,6 +60,7 @@ footer {
 
 i:hover {
     color: var(--snow);
+    transition: color .3s ease-in-out;
 }
 
 .fa-user:hover {
@@ -77,6 +78,13 @@ i:hover {
     border-radius: 50%;
     background-color: var(--spanish-gray);
     margin-left: 10px;
+    opacity: .6;
+}
+
+.nav-item:hover,
+.active:hover,
+.btn-info:hover {
+    opacity: 1;
 }
 
 .active {
@@ -89,12 +97,14 @@ i:hover {
 
 .nav-item:hover {
     background-color: var(--middle-blue-green);
+    transition: .3s ease-in-out;
 }
 
 .dropdown,
 .dropdown:hover {
     color: var(--rich-black-fogra-39);
     background-color: transparent;
+    transition: .3s ease-in-out;
     /* put user img here */
 }
 
@@ -116,6 +126,7 @@ i:hover {
 
 .btn-info:hover {
     background-color: var(--middle-blue-green);
+    transition: .3s ease-in-out;
 }
 
 .fa-magnifying-glass {
@@ -171,4 +182,5 @@ footer .row {
 .social-link:hover i {
     text-decoration: none !important;
     color: var(--middle-blue-green);
+    transition: color .3s ease-in-out;
 }
