@@ -33,6 +33,31 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+  <nav class="container-fluid navbar navbar-expand-lg sticky-top shadow p-3 mb-5">
+    <a class="navbar-brand mx-3" href="{% url 'home' %}">
+      <i class="fa-solid fa-share-nodes"></i>DevShare
+    </a>
+    <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-lg-0 text-center">
+        {% if user.is_authenticated %}
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+        </li>
+        {% else %}
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
+        </li>
+        <li class="nav-item mx-2">
+          <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+        </li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
   {% block content %}
   {% endblock %}
   {% comment %} Font Awesome Icons {% endcomment %}
