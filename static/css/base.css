@@ -170,17 +170,16 @@ footer a i:hover {
     z-index: 2;
 }
 
+.login-form h1 {
+    font-size: 3rem;
+}
+
 .btn--login {
     width: 100%;
     font-size: 1.3rem;
-    background-color: var(--middle-blue-green);
     border-color: var(--middle-blue-green);
-    color: var(--rich-black-fogra-39);
-}
-
-.btn--login:hover {
-    background-color: var(--pacific-blue);
-    border-color: var(--pacific-blue);
+    background: rgb(132, 220, 207);
+    background: linear-gradient(45deg, rgba(132, 220, 207, 1) 27%, rgba(0, 124, 190, 1) 68%, rgba(7, 7, 10, 1) 100%);
 }
 
 .home-logo {
@@ -190,11 +189,14 @@ footer a i:hover {
     text-shadow: 1px 1px 3px var(--raisin-black);
 }
 
-.sign-up {color:var(--pacific-blue);}
-.sign-up:hover {color:var(--star-command-blue);}
+.sign-up {
+    color: var(--pacific-blue);
+}
 
+.sign-up:hover {
+    color: var(--star-command-blue);
+}
 
-/*******************************************************colors*/
 .c--green-s--black {
     color: var(--pacific-blue);
     text-shadow: 1px 1px 1px var(--raisin-black);
