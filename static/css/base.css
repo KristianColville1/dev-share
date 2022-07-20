@@ -32,6 +32,10 @@ form {
     font-family: 'Open Sans', sans-serif;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 /**********************************************************Navigation*/
 .navbar {
     background-color: var(--snow);
@@ -45,6 +49,11 @@ form {
     color: var(--middle-blue-green);
     text-shadow: 1px 1px 1px var(--rich-black-fogra-39);
     margin-left: 20px;
+}
+
+.navbar-brand:hover {
+    color: var(--pacific-blue);
+    transition: color .4s ease-in-out;
 }
 
 .fa-share-nodes {
@@ -74,7 +83,7 @@ i:hover {
 
 .nav-item,
 .active,
-.btn-info {
+.btn--search {
     width: 45px;
     height: 45px;
     display: flex;
@@ -115,21 +124,21 @@ i:hover {
 
 /**********************************************************Search box form */
 .form-control,
-.btn-info {
+.btn--search {
     height: 45px;
     border-radius: 32px;
 }
 
-.btn-info {
+.btn--search {
     border: none;
 }
 
-.btn-info {
+.btn--search {
     width: 45px;
     background-color: var(--rich-black-fogra-39);
 }
 
-.btn-info:hover {
+.btn--search:hover {
     background-color: var(--middle-blue-green);
     transition: .3s ease-in-out;
 }
@@ -145,58 +154,27 @@ footer {
     bottom: 0;
 }
 
-footer .row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.social {
-    min-height: 70px;
-    background-color: var(--rich-black-fogra-39);
-}
-
-.social-heading {
-    width: fit-content;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: var(--middle-blue-green);
-}
-
-.footer-info {
-    min-height: 70px;
-    background-color: var(--middle-blue-green);
-}
-
-.copyright {
-    width: fit-content;
-    color: var(--snow);
-}
-
-.social-link {
-    font-size: 1.9rem;
-    width: 30px;
-    text-decoration: none;
-    color: var(--snow);
-    cursor: pointer;
-    margin: 10px;
-}
-
-.social-link:hover i {
-    text-decoration: none !important;
-    color: var(--middle-blue-green);
-    transition: color .3s ease-in-out;
+footer a i {
+    font-size: 2rem;
+    color: var(--rich-black-fogra-39);
 }
 
 /**********************************************************Home page*/
+
 .home {
     min-height: 100vh;
-    background-color: var(--middle-blue-green);
+    background: rgb(132,220,207);
+    background: linear-gradient(45deg, rgba(132,220,207,1) 27%, rgba(0,124,190,1) 68%, rgba(7,7,10,1) 100%);
+}
+
+.home form {
+    position: absolute;
+    z-index: 1;
 }
 
 .home-logo {
     font-weight: 700;
     font-size: 3rem;
+    color: var(--snow);
+    text-shadow: 1px 1px 3px var(--raisin-black);
 }
