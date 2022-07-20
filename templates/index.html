@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Social Media web Application for people in the computer science field">
+  <meta name="keywords"
+    content="software, social, media, community, developers, engineers, posts, open, source, technology, tips, tools, friends, work, jobs, organisations">
+  <meta name="author" content="Kristian Colville">
+
+  {% comment %} Favicon {% endcomment %}
+  <link rel="icon" type="image/png" sizes="512x512" href="{% static 'img/favicon/android-chrome-512x512.png' %}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{% static 'img/favicon/android-chrome-192x192.png' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+  <link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
+
+  {% comment %} Bootstrap CSS & JavaScript CDN via jsDelivr {% endcomment %}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+
+  {% comment %} Custom CSS {% endcomment %}
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <title>DevShare</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  {% block content %}
+  {% endblock %}
+  {% comment %} Font Awesome Icons {% endcomment %}
+  <script src="https://kit.fontawesome.com/0d880835d2.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
