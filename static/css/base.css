@@ -15,7 +15,8 @@
 
 body {
     overflow-x: hidden;
-    min-height: 100vh;
+    background: rgb(132, 220, 207);
+    background: linear-gradient(45deg, rgba(132, 220, 207, 1) 27%, rgba(0, 124, 190, 1) 68%, rgba(7, 7, 10, 1) 100%);
 }
 
 .navbar,
@@ -149,27 +150,32 @@ i:hover {
 
 /**********************************************************Footer*/
 footer {
-    height: fit-content;
-    position: absolute;
-    bottom: 0;
+    background-color: var(--rich-black-fogra-39);
+    color: var(--snow);
 }
 
 footer a i {
     font-size: 2rem;
-    color: var(--rich-black-fogra-39);
+    color: var(--snow);
 }
 
 /**********************************************************Home page*/
 
-.home {
-    min-height: 100vh;
-    background: rgb(132,220,207);
-    background: linear-gradient(45deg, rgba(132,220,207,1) 27%, rgba(0,124,190,1) 68%, rgba(7,7,10,1) 100%);
+.login-form {
+    position: relative;
+    z-index: 2;
 }
 
-.home form {
-    position: absolute;
-    z-index: 1;
+.btn--login {
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: var(--middle-blue-green);
+    border-color: var(--middle-blue-green);
+}
+
+.btn--login:hover {
+    background-color: var(--pacific-blue);
+    border-color: var(--pacific-blue);
 }
 
 .home-logo {
