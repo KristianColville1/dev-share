@@ -3,20 +3,15 @@
 
 /**********************************************************Default colors*/
 :root {
-    --snow: #fffbfeff;
-    --spanish-gray: #929195ff;
-    --raisin-black: #24272bff;
-    --rich-black-fogra-39: #07070aff;
-    --indigo-dye: #044264ff;
-    --star-command-blue: #007cbeff;
-    --pacific-blue: #42acc7ff;
-    --middle-blue-green: #84dccfff;
+    --tea-green: #c9e4caff;
+    --eton-blue: #87bba2ff;
+    --steel-teal: #55828bff;
+    --deep-space-sparkle: #3b6064ff;
+    --charcoal: #364958ff;
 }
 
 body {
     overflow-x: hidden;
-    background: rgb(132, 220, 207);
-    background: linear-gradient(45deg, rgba(132, 220, 207, 1) 27%, rgba(0, 124, 190, 1) 68%, rgba(7, 7, 10, 1) 100%);
 }
 
 .navbar,
@@ -29,7 +24,7 @@ footer {
 
 form {
     width: fit-content;
-    background-color: var(--snow);
+    background-color: var(--);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -38,79 +33,53 @@ a:hover {
 }
 
 /**********************************************************Navigation*/
-.navbar {
-    background: transparent;
-    text-shadow: 1px 1px 1px var(--rich-black-fogra-39);
-}
-
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 2px;
-    color: var(--snow);
+    color: var(--eton-blue);
+    text-shadow: 1px 1px 1px var(--charcoal);
 }
 
-.navbar-brand:hover {
-    color: var(--pacific-blue);
-    transition: color .4s ease-in-out;
+.navbar-brand:hover,
+.nav-item .nav-link:hover {
+    color: var(--eton-blue);
+    transition: color .2s ease-in-out;
+    text-shadow: 1px 1px 1px var(--charcoal);
 }
 
 .nav-item .nav-link {
-    color: var(--snow);
-    font-size: 1.2rem;
+    color: var(--charcoal);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px var(--steel-teal);
 }
 
 .current_page {
-    border-bottom: 1px solid var(--snow);
+    border-bottom: 1px solid var(--charcoal);
 }
 
 .navbar-toggler,
 .navbar-toggler-icon {
-    background-color: var(--snow);
+    background-color: var(--);
 }
 
 .navbar-toggler:focus {
     color: transparent;
 }
 
-/**********************************************************Search box form */
-.form-control,
-.btn--search {
-    height: 45px;
-    border-radius: 32px;
-}
-
-.btn--search {
-    border: none;
-}
-
-.btn--search {
-    width: 45px;
-    background-color: var(--rich-black-fogra-39);
-}
-
-.btn--search:hover {
-    background-color: var(--middle-blue-green);
-    transition: .3s ease-in-out;
-}
-
-.fa-magnifying-glass {
-    color: var(--snow);
-}
-
 /**********************************************************Footer*/
 footer {
-    background-color: var(--rich-black-fogra-39);
-    color: var(--snow);
+    background-color: var(--charcoal);
+    color: var(--tea-green);
 }
 
 footer a i {
     font-size: 2rem;
-    color: var(--snow);
+    color: var(--tea-green);
 }
 
 footer a i:hover {
-    color: var(--middle-blue-green);
+    color: var(--eton-blue);
 }
 
 /**********************************************************Home page*/
@@ -127,27 +96,21 @@ footer a i:hover {
 .btn--login {
     width: 100%;
     font-size: 1.3rem;
-    border-color: var(--middle-blue-green);
-    background: rgb(132, 220, 207);
-    background: linear-gradient(45deg, rgba(132, 220, 207, 1) 27%, rgba(0, 124, 190, 1) 68%, rgba(7, 7, 10, 1) 100%);
+    border-color: var(--);
 }
 
 .home-logo {
     font-weight: 700;
     font-size: 3rem;
-    color: var(--snow);
-    text-shadow: 1px 1px 3px var(--raisin-black);
+    color: var(--);
+    text-shadow: 1px 1px 3px var(--);
 }
 
 .sign-up {
-    color: var(--pacific-blue);
+    color: var(--);
+    font-weight: 900;
 }
 
 .sign-up:hover {
-    color: var(--star-command-blue);
-}
-
-.c--green-s--black {
-    color: var(--pacific-blue);
-    text-shadow: 1px 1px 1px var(--raisin-black);
+    color: var(--);
 }
