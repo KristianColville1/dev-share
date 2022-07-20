@@ -159,6 +159,10 @@ footer a i {
     color: var(--snow);
 }
 
+footer a i:hover {
+    color: var(--middle-blue-green);
+}
+
 /**********************************************************Home page*/
 
 .login-form {
@@ -171,6 +175,7 @@ footer a i {
     font-size: 1.3rem;
     background-color: var(--middle-blue-green);
     border-color: var(--middle-blue-green);
+    color: var(--rich-black-fogra-39);
 }
 
 .btn--login:hover {
@@ -183,4 +188,14 @@ footer a i {
     font-size: 3rem;
     color: var(--snow);
     text-shadow: 1px 1px 3px var(--raisin-black);
+}
+
+.sign-up {color:var(--pacific-blue);}
+.sign-up:hover {color:var(--star-command-blue);}
+
+
+/*******************************************************colors*/
+.c--green-s--black {
+    color: var(--pacific-blue);
+    text-shadow: 1px 1px 1px var(--raisin-black);
 }

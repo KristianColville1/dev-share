@@ -4,12 +4,12 @@
 
 <div class="home">
     <div class="container">
-        <h1 class="text-center py-5 home-logo"><i class="fa-solid fa-share-nodes home-logo"></i>DevShare</h1>
+        <h1 class="text-center font-weight-bold py-5 home-logo"><i class="fa-solid fa-share-nodes home-logo"></i>DevShare</h1>
         <div class="row">
             <div class="col-12">
                 <form action="" class="shadow-lg p-3 rounded login-form mx-auto">
                     {% csrf_token %}
-                    <h1 class="text-center green">Login</h1>
+                    <h1 class="text-center c--green-s--black">Login</h1>
                     <hr>
                     <div class="row text-center">
                         <button class="btn btn-link">
@@ -33,9 +33,9 @@
                         <input type="password" class="form-control" id="exampleInputPassword1">
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary font-weight-bold btn--login">Login</button>
+                    <button type="submit" class="btn btn-primary text-uppercase btn--login">Login</button>
                     <p class="text-center">Not a member yet?
-                        <a class="text-decoration-none">Signup now</a></p>
+                        <a class="text-decoration-none sign-up">Signup now</a></p>
                 </form>
 
             </div>
