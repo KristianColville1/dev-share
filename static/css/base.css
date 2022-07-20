@@ -39,17 +39,15 @@ a:hover {
 
 /**********************************************************Navigation*/
 .navbar {
-    background-color: var(--snow);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    background: transparent;
+    text-shadow: 1px 1px 1px var(--rich-black-fogra-39);
 }
 
 .navbar-brand {
     font-size: 2.5rem;
     font-weight: 900;
     letter-spacing: 2px;
-    color: var(--middle-blue-green);
-    text-shadow: 1px 1px 1px var(--rich-black-fogra-39);
-    margin-left: 20px;
+    color: var(--snow);
 }
 
 .navbar-brand:hover {
@@ -57,70 +55,22 @@ a:hover {
     transition: color .4s ease-in-out;
 }
 
-.fa-share-nodes {
-    color: var(--rich-black-fogra-39);
-    margin-right: 5px;
-}
-
-.fa-house,
-.fa-users,
-.fa-comment,
-.fa-bell,
-.fa-magnifying-glass,
-.fa-user {
-    font-size: 1.1rem;
-    color: var(--rich-black-fogra-39);
-    text-shadow: 1px 1px 3px var(--raisin-black);
-}
-
-i:hover {
+.nav-item .nav-link {
     color: var(--snow);
-    transition: color .3s ease-in-out;
+    font-size: 1.2rem;
 }
 
-.fa-user:hover {
-    color: var(--rich-black-fogra-39);
+.current_page {
+    border-bottom: 1px solid var(--snow);
 }
 
-.nav-item,
-.active,
-.btn--search {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: var(--spanish-gray);
-    margin-left: 10px;
-    opacity: .6;
+.navbar-toggler,
+.navbar-toggler-icon {
+    background-color: var(--snow);
 }
 
-.nav-item:hover,
-.active:hover,
-.btn-info:hover {
-    opacity: 1;
-}
-
-.active {
-    background-color: var(--middle-blue-green);
-}
-
-.nav-item>a {
-    padding: 5px;
-}
-
-.nav-item:hover {
-    background-color: var(--middle-blue-green);
-    transition: .3s ease-in-out;
-}
-
-.dropdown,
-.dropdown:hover {
-    color: var(--rich-black-fogra-39);
-    background-color: transparent;
-    transition: .3s ease-in-out;
-    /* put user img here */
+.navbar-toggler:focus {
+    color: transparent;
 }
 
 /**********************************************************Search box form */
