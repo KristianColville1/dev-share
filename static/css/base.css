@@ -61,6 +61,18 @@ a:hover {
     transition: color .3s ease-in-out;
 }
 
+.navbar-toggler {
+    border-color: var(--caribbean-green);
+}
+
+.navbar-toggler-icon {
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    color: var(--caribbean-green);
+    background-image: none;
+}
+
 /**********************************************************Footer*/
 footer {
     color: var(--misty-rose);
@@ -103,17 +115,19 @@ footer a i:hover {
 }
 
 .btn--login {
+    color: var(--misty-rose);
     font-weight: 900;
     background-color: var(--vivid-sky-blue);
-    border-color: var(--vivid-sky-blue);
 }
+
 .sign-up {
-    color: var(--dark-salmon);
+    color: var(--rich-black-fogra-29);
     font-weight: 900;
+    background-color: var(--dark-salmon);
+    border-color: var(--rust);
 }
 
 .form-text,
-.btn--login,
-.sign-up {
+.btn--login {
     text-shadow: 1px 1px 1px var(--rich-black-fogra-29);
 }
