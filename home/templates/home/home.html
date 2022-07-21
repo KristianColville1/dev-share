@@ -2,10 +2,10 @@
 
 {% block content %}
 <main class="home">
-    <div class="container my-5">
+    <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-md-6 col-lg-4 d-sm-none d-md-block">
-                <div id="home-carousel" class="carousel slide" data-ride="carousel">
+            <div class="col-md-6 col-lg-8 d-sm-none d-md-block home-left">
+                <div id="home-carousel" class="carousel slide shaded py-4 px-3 rounded text-center" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                           <h1>A social network designed for just developers..</h1>
@@ -19,9 +19,24 @@
                     </div>
                   </div>
             </div>
-            <div class="col-md-6 col-lg-8">
-                <form action="">
+            <div class="col-md-6 col-lg-4 float-right">
+                <form action="" class="shadow-lg p-3 rounded login-form mx-auto">
                     {% csrf_token %}
+                    <h1 class="text-center">Login</h1>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text">We'll never share your email with anyone
+                            else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary text-uppercase btn--login w-100">Login</button>
+                    <p class="text-center py-2">Not a member yet?
+                        <a class="text-decoration-none sign-up text-uppercase">Create account</a></p>
                 </form>
             </div>
 
