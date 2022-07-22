@@ -104,7 +104,7 @@ footer a i:hover {
     color: var(--misty-rose);
 }
 
-.home form {
+.login-page form {
     color: var(--misty-rose);
     background: rgb(13,31,45);
     background: linear-gradient(104deg, rgba(13,31,45,1) 21%, rgba(61,211,155,1) 81%, rgba(63,111,71,1) 100%);
@@ -142,14 +142,16 @@ footer a i:hover {
 
 /**************************************************************Forms and inputs */
 
-.input-icons i {
+.fa-envelope,
+.fa-user {
     font-size: 24px;
     color: var(--caribbean-green);
+    width: 100%;
+    margin-top: 32px;
 }
   
 .input-icons {
-    width: 100%;
-    margin-bottom: 10px;
+
 }
   
 .input-field {
