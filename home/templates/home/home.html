@@ -4,34 +4,37 @@
 <main class="home">
     <div class="container-fluid my-5">
         <div class="row">
-            <div class="col-md-6 col-lg-8 d-sm-none d-md-block home-left shadow-lg p-3 rounded">
+            <div class="col-md-6 col-lg-6 d-none d-sm-none d-md-block home-left py-5 rounded m-3">
                 <div id="home-carousel" class="carousel slide text-center" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                          <h1>A social network designed for just developers..</h1>
+                          <h1>A social media website like no other</h1>
+                          <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/inspiration.jpg">
                       </div>
                       <div class="carousel-item">
                         <h1>Bringing people closer together since 2022</h1>
+                        <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/people-laughing.jpg">
                       </div>
                       <div class="carousel-item">
-                        <h1>Try it now!</h1>
+                        <h1>Connecting people and changing lives</h1>
+                        <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/cafe.jpg">
                       </div>
                     </div>
                   </div>
             </div>
             <div class="col-md-6 col-lg-4 my-3">
-                <form action="" class="shadow-lg p-3 rounded login-form mx-auto">
+                <form action="" class="shadow p-3 rounded login-form mx-auto">
                     {% csrf_token %}
                     <h1 class="text-center">Login</h1>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div class="form-group input-icons">
+                        <i class="fa-solid fa-envelope position-absolute m-2"></i>
+                        <input type="email" class="form-control input-field text-center" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
                         <small id="emailHelp" class="form-text">We'll never share your email with anyone
                             else.</small>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="form-group input-icons">
+                        <i class="fa-solid fa-user position-absolute m-2"></i>
+                        <input type="password" class="form-control  input-field text-center" id="exampleInputPassword" placeholder="Password">
                     </div>
                     <br>
                     <button type="submit" class="btn text-uppercase btn--login w-100 rounded-4">Login</button>
