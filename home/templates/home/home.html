@@ -1,5 +1,5 @@
 {% extends "index.html" %}
-
+{% load static %}
 {% block content %}
 <main class="home">
     <div class="container-fluid my-5">
@@ -9,15 +9,15 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                           <h1>A social media website like no other</h1>
-                          <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/inspiration.jpg">
+                          <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/inspiration.jpg' %}">
                       </div>
                       <div class="carousel-item">
                         <h1>Bringing people closer together since 2022</h1>
-                        <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/people-laughing.jpg">
+                        <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/people-laughing.jpg' %}">
                       </div>
                       <div class="carousel-item">
                         <h1>Connecting people and changing lives</h1>
-                        <img class="home-imgs home-img-1 shadow rounded" src="/static/img/home/cafe.jpg">
+                        <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/cafe.jpg' %}">
                       </div>
                     </div>
                   </div>
