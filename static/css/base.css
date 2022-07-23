@@ -44,7 +44,7 @@ a:hover {
 }
 
 .navbar-brand {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--vivid-sky-blue);
 }
 
@@ -54,8 +54,9 @@ a:hover {
 
 .nav-item .nav-link {
     color: var(--vivid-sky-blue);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
+
 .nav-item .nav-link:hover {
     color: var(--misty-rose);
     transition: color .3s ease-in-out;
@@ -161,6 +162,23 @@ footer a i:hover {
     height: 400px;
 }
 
+.profile-box {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+}
+
+.feed-box {
+    background-color: lightblue;
+    width: 100%;
+    height: 100%;
+}
+
+.settings-box {
+    background-color: rgb(96, 143, 96);
+    width: 100%;
+    height: 100%;
+}
 /**************************************************************Forms and inputs */
 
 .fa-envelope,
