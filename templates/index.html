@@ -48,8 +48,8 @@
     <div class="collapse navbar-collapse text-center mx-5" id="navbarSupportedContent">
       <form class="d-flex" role="search">
         {% csrf_token %}
-        <input class="form-control rounded-pill mx-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+        <input class="form-control rounded-3 mx-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn rounded-3" type="submit">Search</button>
       </form>
       <ul class="navbar-nav w-100 justify-content-end mx-auto">
         {% if user.is_authenticated %}
@@ -68,7 +68,7 @@
             <i class="fa-solid fa-bell"></i>
           </a>
         </li>
-        <li class="nav-item dropdown mx-2" data-toggle="tooltip" data-placement="bottom" title="User settings">
+        <li class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="User settings">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-user-gear"></i>
           </a>

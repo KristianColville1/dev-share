@@ -7,11 +7,13 @@
               gdg
           </div>
       </div>
-      <div class="col-md-6 col-lg-6">
+      <div class="col-sm-12 col-md-6 col-lg-6 mt-2">
           <div class="feed-box">
-              <div class="post-box shadow rounded">
+              <div class="post-box">
                   <div class="row">
-                      <form action="">
+                      <form action="" class=" shadow rounded-3">
+                        {% csrf_token %}
+                        <h4>Post</h4>
                       </form>
                   </div>
               </div>
