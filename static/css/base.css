@@ -97,7 +97,7 @@ footer a i:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.home-left {
+.home-hero {
     background: rgb(13,31,45);
     background: linear-gradient(104deg, rgba(13,31,45,1) 21%, rgba(61,211,155,1) 81%, rgba(63,111,71,1) 100%);
 }
@@ -140,6 +140,15 @@ footer a i:hover {
 
 .home-imgs {
     height: 400px;
+}
+
+.fa-user-alien {
+    font-size: 32px;
+    color: var(--caribbean-green);
+}
+
+.dropdown {
+    margin-right: 30px;
 }
 
 /**************************************************************Forms and inputs */
