@@ -45,15 +45,15 @@ a:hover {
 
 .navbar-brand {
     font-size: 3rem;
-    color: var(--caribbean-green);
+    color: var(--vivid-sky-blue);
 }
 
 .navbar-brand:hover {
-    color: var(--caribbean-green);
+    color: var(--vivid-sky-blue);
 }
 
 .nav-item .nav-link {
-    color: var(--caribbean-green);
+    color: var(--vivid-sky-blue);
     font-size: 1.5rem;
 }
 .nav-item .nav-link:hover {
@@ -74,6 +74,25 @@ a:hover {
     margin-bottom: 2px;
 }
 
+.dropdown {
+    margin-right: 30px;
+}
+
+.dropdown-menu {
+    background-color: var(--rich-black-fogra-29);
+}
+
+.dropdown-item {
+    color: var(--vivid-sky-blue);
+}
+
+.dropdown-item:hover {
+    background-color: var(--vivid-sky-blue);
+}
+
+.dropdown-divider {
+    background-color: var(--caribbean-green)
+}
 
 /**********************************************************Footer*/
 footer {
@@ -140,15 +159,6 @@ footer a i:hover {
 
 .home-imgs {
     height: 400px;
-}
-
-.fa-user-alien {
-    font-size: 32px;
-    color: var(--caribbean-green);
-}
-
-.dropdown {
-    margin-right: 30px;
 }
 
 /**************************************************************Forms and inputs */
