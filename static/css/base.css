@@ -16,6 +16,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--taupe-gray);
 }
 
 .navbar,
@@ -75,8 +76,17 @@ a:hover {
     margin-bottom: 2px;
 }
 
+.collapse .btn {
+    color: var(--caribbean-green);
+    border: 1px solid var(--caribbean-green);
+}
+.collapse .btn:hover {
+    color: var(--rich-black-fogra-29);
+    background-color: var(--caribbean-green);
+}
+
 .dropdown {
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 .dropdown-menu {
@@ -98,7 +108,6 @@ a:hover {
 /**********************************************************Footer*/
 footer {
     color: var(--misty-rose);
-    background-color: var(--caribbean-green);
 }
 
 footer a i {
@@ -178,6 +187,10 @@ footer a i:hover {
     background-color: rgb(96, 143, 96);
     width: 100%;
     height: 100%;
+}
+
+.post-box form {
+    background-color: whitesmoke;
 }
 /**************************************************************Forms and inputs */
 
