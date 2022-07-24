@@ -33,7 +33,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <nav class="container-fluid navbar navbar-expand-lg sticky-top shadow-sm p-3">
+  <nav class="container-fluid navbar navbar-expand-lg sticky-top shadow-sm gy-0">
     <a class="navbar-brand mx-3" href="{% url 'home' %}">
       <i class="fa-solid fa-share-nodes"></i> DevShare
     </a>
@@ -53,24 +53,24 @@
       </form>
       <ul class="navbar-nav w-100 justify-content-end mx-auto">
         {% if user.is_authenticated %}
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Friends">
             <i class="fa-solid fa-user-group"></i>
           </a>
         </li>
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Messages">
             <i class="fa-solid fa-message"></i>
           </a>
         </li>
-        <li class="nav-item mx-2">
+        <li class="nav-item mx-3">
           <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications">
             <i class="fa-solid fa-bell"></i>
           </a>
         </li>
         <li class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="User settings">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-user-gear"></i>
+            <i class="fa-solid fa-gear"></i>
           </a>
           <ul class="dropdown-menu shadow rounded">
             <li><a class="dropdown-item" href="#">User Profile</a></li>
