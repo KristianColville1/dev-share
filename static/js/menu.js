@@ -16,11 +16,11 @@ $(document).ready(()=> {
     });
 
     /* Slides the dropdown menu for user settings */
-    $('.dropdown-toggle').on('click', () => {
-        if ($('.dropdown-toggle').hasClass('show')){
-            $('.dropdown-menu').slideUp();
+    $('.nav-menu').on('click', () => {
+        if ($('.nav-menu').hasClass('show')){
+            $('.nav-menu-items').slideUp();
         } else {
-            $('.dropdown-menu').slideDown();
+            $('.nav-menu-items').slideDown();
         }
     });
 });

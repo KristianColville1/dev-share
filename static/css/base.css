@@ -174,19 +174,47 @@ footer a i:hover {
 
 .boxes {
     background-color: white;
-    border: 2px solid white;
 }
 
 /**************************************************************Profiles */
-.profile-box,
-.profile-img img {
+
+.profile-img {
     height: 100px;
+}
+
+.profile-img img {
+    height: 60px;
+}
+
+.details-box .list-group-item {
+    border: none;
+    font-size: 1rem;
 }
 
 .details-box .list-group i {
     color: var(--caribbean-green);
-    font-size: 24px;
-    margin-left: 30px;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.home-hr-bg {
+    width: 100%;
+    height: 2px;
+    background-color: var(--rich-black-fogra-29);
+}
+
+.post-type-divider button:hover {
+    background-color: none;
+    border-color: transparent;
+}
+
+.post-type-divider .dropdown-menu {
+    color: var(--rich-black-fogra-29);
+    background-color: white;
+}
+
+.post-type-divider .dropdown-item {
+    color: var(--rich-black-fogra-29);
 }
 
 /**************************************************************Forms and inputs */

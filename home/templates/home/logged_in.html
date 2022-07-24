@@ -15,8 +15,17 @@
               <button class="btn btn-success float-right" type="submit">Post</button>
             </form>
           </div>
-          <hr>
-          <div class="row shadow rounded-3 mt-4 py-2 boxes">
+          <div class="post-type-divider dropdown w-100 position-relative">
+            <button class="btn d-flex flex-row  w-100 dropdown-toggle text-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <hr class="home-hr-bg">
+              <span class="text-center">Sort by:</span>
+            </button>
+            <ul class="dropdown-menu position-absolute start-50 w-50 text-center">
+              <li><a class="dropdown-item" href="#">Newest</a></li>
+              <li><a class="dropdown-item" href="#">Popular</a></li>
+            </ul>
+          </div>
+          <div class="row shadow rounded-3 boxes">
             <div class="">
               <!--TODO: for loop to display posts if user has friends and they have posts and post public then display by date and time -->
               <div class="dummy-post">
@@ -34,10 +43,10 @@
       </div>
     </div>
     <div class="col-sm-12 col-md-3 col-lg-4">
-      <div class="recent-box boxes shadow rounded-3">
+      <div class="messages-box boxes shadow rounded-3">
         fhdgh
       </div>
-      <div class="settings-box mt-4 boxes shadow rounded-3">
+      <div class="suggestions-box mt-4 boxes shadow rounded-3">
         fhdgh
       </div>
       <div class="footer-box mt-4">
