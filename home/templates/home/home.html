@@ -29,5 +29,7 @@
   </div>
   {% endif %}
 </main>
+{% if user.is_not_authenticated%}
 {% include "footer_full.html" %}
+{% endif %}
 {% endblock %}
