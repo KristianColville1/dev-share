@@ -1,0 +1,24 @@
+{% block content %}
+{% load static %}
+<div class="profile-box position-relative shadow rounded-3">
+  <div class="profile-img position-absolute top-50 start-50 translate-middle">
+      <img class="shadow rounded-circle" src="{% static 'img/profile-img-example.jpg' %}" alt="">
+  </div>
+</div>
+<div class="details-box mt-4 boxes shadow rounded-3">
+  <div class="list-group  position-relative text-center w-100">
+    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+      <i class="fa-solid fa-house position-absolute start-0"></i> Home</li>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <i class="fa-solid fa-comments position-absolute start-0"></i> Posts</li>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <i class="fa-solid fa-message position-absolute start-0"></i> Messages</li>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">
+      <i class="fa-solid fa-user-group position-absolute start-0"></i> Friends</li>
+    </a>
+  </div>
+</div>
+{% endblock %}

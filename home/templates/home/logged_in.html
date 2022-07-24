@@ -1,26 +1,23 @@
 {% block content %}
 
 <div class="container">
-  <div class="row mt-2">
+  <div class="row mt-4">
     <div class="col-md-3 col-lg-3 d-none d-md-block">
-      <div class="profile-box">
-        gdg
-      </div>
+      {% include "profiles/home_profile.html"%}
     </div>
     <div class="col-sm-12 col-md-6 col-lg-6">
       <div class="feed-box">
         <div class="post-box">
-          <div class="row shadow rounded-3 py-2">
+          <div class="row shadow rounded-3 py-2 boxes">
             <form action="" class="">
               {% csrf_token %}
-              <h4 class="text-center">Post</h4>
-              <textarea class="rounded-3 w-100 text-center" name="post" id="post" rows="1"
-                placeholder="Write a post here..." maxlength="100"></textarea>
+              <input type="text" class="rounded-3 w-100 text-center m-2" placeholder="Share a post, status or idea">
               <button class="btn btn-success float-right" type="submit">Post</button>
             </form>
           </div>
-          <div class="row shadow rounded-3 mt-2 py-2">
-            <div class="posts">
+          <hr>
+          <div class="row shadow rounded-3 mt-4 py-2 boxes">
+            <div class="">
               <!--TODO: for loop to display posts if user has friends and they have posts and post public then display by date and time -->
               <div class="dummy-post">
                 <h1>Today is another day</h1>

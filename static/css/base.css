@@ -16,7 +16,6 @@
 
 body {
     overflow-x: hidden;
-    background-color: var(--taupe-gray);
 }
 
 .navbar,
@@ -107,16 +106,16 @@ a:hover {
 
 /**********************************************************Footer*/
 footer {
-    color: var(--misty-rose);
+    color: var(--rich-black-fogra-29);
 }
 
 footer a i {
     font-size: 2rem;
-    color: var(--misty-rose);
+    color: var(--rich-black-fogra-29);
 }
 
 footer a i:hover {
-    color: var(--rich-black-fogra-29);
+    color: var(--caribbean-green);
     transition: color .3s ease-in-out;
 }
 
@@ -171,9 +170,23 @@ footer a i:hover {
     height: 400px;
 }
 
-.post-box .row {
+.boxes {
     background-color: whitesmoke;
+    border: 2px solid whitesmoke;
 }
+
+/**************************************************************Profiles */
+.profile-box,
+.profile-img img {
+    height: 100px;
+}
+
+.details-box .list-group i {
+    color: var(--caribbean-green);
+    font-size: 24px;
+    margin-left: 30px;
+}
+
 /**************************************************************Forms and inputs */
 
 .fa-envelope,
@@ -186,4 +199,12 @@ footer a i:hover {
 .input-field {
     width: 100%;
     padding: 10px;
+}
+
+.post-box form {
+    height: 150px;
+}
+
+.post-box form input {
+    height: 100px;
 }
