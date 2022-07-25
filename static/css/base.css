@@ -183,7 +183,9 @@ footer a i:hover {
     background-color: var(--rich-black-fogra-29);
 }
 
-.post-type-divider button:hover {
+.post-type-divider button:hover,
+.post-type-divider button:focus,
+.post-type-divider button::after {
     background-color: none;
     border-color: transparent;
 }
