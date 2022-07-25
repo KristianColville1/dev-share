@@ -30,3 +30,40 @@
     * [Heroku](#heroku)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
+
+
+## Information Architecture
+
+### Database
+### Data Relationships
+### Data Modeling
+
+#### Models
+
+In no particular order these are the following models created for the DevShare web app.
+
+1. Posts
+
+| Name | Database Key | Field Type | Validation |
+|---|---|---|---|
+|||||
+
+2. Comments
+
+| Name | Database Key | Field Type | Validation |
+|---|---|---|---|
+|||||
+
+2. Messages
+
+| Name | Database Key | Field Type | Validation |
+|---|---|---|---|
+|||||
+
+4. Profiles
+
+| Name | Database Key | Field Type | Validation |
+|---|---|---|---|
+|||||
+
+### Flow Charts
