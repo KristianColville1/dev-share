@@ -15,21 +15,20 @@
   <div class="row">
     <div class="col-md-8 mt-2 offset-md-2">
       <h1 class="text-center">Login</h1>
-      <form class="shadow p-3 rounded login-form mx-auto" method="POST" action="{% url 'account_login' %}">
+      <br>
+      <form class="shadow p-3 rounded login-form mx-auto boxes" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form.as_p }}
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button type="submit" class="btn text-uppercase btn--login w-100 rounded-4">Login</button>
+        <button type="submit" class="btn blue-btn w-100 rounded-pill">Login</button>
         <hr>
         <p class="text-center py-2">Not a member?</p>
         <a href="{{ signup_url }}" aria-label="Click this link to go to the sign up page" role="button"
-          class="btn text-decoration-none sign-up text-uppercase w-100 rounded-4">Create account</a>
+          class="btn btn--sign-in text-decoration-none text-uppercase w-100 rounded-4">Create account</a>
       </form>
     </div>
   </div>
 </div>
-</div>
-{% include "footer_full.html" %}
 {% endblock %}

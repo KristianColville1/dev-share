@@ -148,32 +148,13 @@ footer a i:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-.home-hero {
-    background: rgb(13,31,45);
-    background: linear-gradient(104deg, rgba(13,31,45,1) 21%, rgba(61,211,155,1) 81%, rgba(63,111,71,1) 100%);
-}
-
-.carousel {
-    color: var(--misty-rose);
-}
-
-.login-page form {
-    color: var(--misty-rose);
-    background: rgb(13,31,45);
-    background: linear-gradient(104deg, rgba(13,31,45,1) 21%, rgba(61,211,155,1) 81%, rgba(63,111,71,1) 100%);
-}
-
-.form-text {
-    color: var(--misty-rose);
-}
-
 .btn--login {
     color: var(--misty-rose);
     font-weight: 900;
     background-color: var(--vivid-sky-blue);
 }
 
-.sign-up {
+.btn--sign-in {
     color: var(--rich-black-fogra-29);
     font-weight: 900;
     background-color: var(--dark-salmon);
@@ -183,10 +164,6 @@ footer a i:hover {
 .form-text,
 .btn--login {
     text-shadow: 1px 1px 1px var(--rich-black-fogra-29);
-}
-
-.carousel h1 {
-    text-shadow: 1px 1px 2px var(--taupe-gray);
 }
 
 .home-imgs {
@@ -248,9 +225,7 @@ input.create-post {
 }
 
 /**************************************************************Sign out */
-.sign-out button {
 
-}
 /**************************************************************Forms and inputs */
 
 .fa-envelope,

@@ -7,20 +7,20 @@
   {% else %}
   <div class="container-fluid my-5">
     <div class="row">
-      <div class="col-12 home-hero mx-auto">
+      <div class="col-12 mx-auto">
         <div id="home-carousel" class="carousel slide text-center" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <h1>A social media website like no other</h1>
-              <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/inspiration.jpg' %}">
+              <img class="home-imgs home-img-1 shadow rounded-3 mx-auto" src="{% static 'img/inspiration.jpg' %}">
             </div>
             <div class="carousel-item">
               <h1>Bringing people closer together since 2022</h1>
-              <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/people-laughing.jpg' %}">
+              <img class="home-imgs home-img-1 shadow rounded-3 mx-auto" src="{% static 'img/people-laughing.jpg' %}">
             </div>
             <div class="carousel-item">
               <h1>Connecting people and changing lives</h1>
-              <img class="home-imgs home-img-1 shadow rounded" src="{% static 'img/cafe.jpg' %}">
+              <img class="home-imgs home-img-1 shadow rounded-3 mx-auto" src="{% static 'img/cafe.jpg' %}">
             </div>
           </div>
         </div>
@@ -29,8 +29,4 @@
   </div>
   {% endif %}
 </main>
-{% if user.is_authenticated%}
-{% else %}
-{% include "footer_full.html" %}
-{% endif %}
 {% endblock %}
