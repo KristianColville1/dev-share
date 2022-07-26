@@ -28,28 +28,17 @@
             </ul>
           </div>
           <div class="row shadow rounded-3 boxes">
-            <div class="">
-              <!--TODO: for loop to display posts if user has friends and they have posts and post public then display by date and time -->
-              <div class="dummy-post">
-                <h1>Today is another day</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                  officia deserunt mollit anim id est laborum.</p>
-                  <p>Author - dummy post visual</p>
-              </div>
-            </div>
+            {% include "posts/base.html" %}
           </div>
         </div>
       </div>
     </div>
     <div class="col-sm-12 col-md-3 col-lg-4">
-      <div class="messages-box boxes shadow rounded-3">
-        fhdgh
+      <div class="friends-suggestions-box boxes shadow rounded-3">
+        <h5 class="text-center">People you may know</h5>
       </div>
-      <div class="suggestions-box mt-4 boxes shadow rounded-3">
-        fhdgh
+      <div class="messages-box mt-4 boxes shadow rounded-3">
+        <h5 class="text-start mx-3">Messages</h5>
       </div>
       <div class="footer-box mt-4">
         {% include "footer_small.html" %}
