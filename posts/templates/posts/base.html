@@ -1,0 +1,14 @@
+{% block content %}
+<div class="container-fluid">
+  {% for post in post_list %}
+  <div class="row">
+    <p>{{post.title}}</p>
+    <p>{{post.body}}</p>
+    <p>{{post.slug}}</p>
+    <p>{{post.author}}</p>
+    <p>{{post.created_on}}</p>
+    <p>test</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
