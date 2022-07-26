@@ -33,27 +33,35 @@
           </div>
           {% for post in post_list %}
           <div class="row shadow rounded-3 py-2 mt-4 boxes">
-              <h1 class="text-center">{{post.title}}</h1>
-              <p>{{post.body}}</p>
-              <p>{{post.slug}}</p>
-              <p>{{post.author}}</p>
-              <p>{{post.created_on}}</p>
+            <div class="post-edit-btn dropdown text-end">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+                <i class="fa-solid fa-ellipsis"></i>
+              </button>
+              <ul class="dropdown-menu text-center">
+                <li><a class="dropdown-item" href="#">Edit</a></li>
+                <li><a class="dropdown-item" href="#">example</a></li>
+              </ul>
+            </div>
+            <h1 class="text-center">{{post.title}}</h1>
+            <p class="text-center">{{post.body}}</p>
+            <p class="text-end fs-6 text fw-light">Created by {{post.author}} on {{post.created_on}}</p>
           </div>
           {% endfor %}
         </div>
       </div>
     </div>
-      <div class="col-sm-12 col-md-3 col-lg-4">
-        <div class="friends-suggestions-box boxes shadow rounded-3">
-          <h5 class="text-center">People you may know</h5>
-        </div>
-        <div class="messages-box mt-4 boxes shadow rounded-3">
-          <h5 class="text-start mx-3">Messages</h5>
-        </div>
-        <div class="footer-box mt-4">
-          {% include "footer_small.html" %}
-        </div>
+    <div class="col-sm-12 col-md-3 col-lg-4">
+      <div class="friends-suggestions-box boxes shadow rounded-3">
+        <h5 class="text-center">People you may know</h5>
+      </div>
+      <div class="messages-box mt-4 boxes shadow rounded-3">
+        <h5 class="text-start mx-3">Messages</h5>
+      </div>
+      <div class="footer-box mt-4">
+        {% include "footer_small.html" %}
       </div>
     </div>
   </div>
-  {% endblock %}
+</div>
+{% endblock %}

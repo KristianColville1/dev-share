@@ -182,7 +182,10 @@ footer a i:hover {
 
 .post-type-divider button:hover,
 .post-type-divider button:focus,
-.post-type-divider button::after {
+.post-type-divider button::after,
+.post-edit-btn button:hover,
+.post-edit-btn button:focus,
+.post-edit-btn button:after {
     background-color: none;
     border-color: transparent;
 }
