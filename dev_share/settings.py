@@ -49,13 +49,15 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'home',
+    'feed',
     'profiles',
     'posts'
 ]
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/feed/'
 LOGOUT_REDIRECT_URL = '/'
 
 MIDDLEWARE = [
