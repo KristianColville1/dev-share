@@ -13,12 +13,14 @@
           <div class="row shadow rounded-3 py-2 boxes">
             <form action="" class="position-relative">
               {% csrf_token %}
-              <input type="text" class="create-post rounded-3 w-100 text-center mx-2" placeholder="Share a post, status or idea">
+              <input type="text" class="create-post rounded-3 w-100 text-center mx-2"
+                placeholder="Share a post, status or idea">
               <button class="blue-btn btn position-absolute bottom-0 end-0 mx-2" type="submit">Post</button>
             </form>
           </div>
           <div class="post-type-divider dropdown w-100 position-relative">
-            <button class=" btn d-flex flex-row  w-100 dropdown-toggle text-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class=" btn d-flex flex-row  w-100 dropdown-toggle text-end" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
               <hr class="home-hr-bg">
               <span class="sort-by position-absolute top-50 end-0 translate-middle-y">Sort by:
                 <i class="fa-solid fa-circle-chevron-down"></i>
@@ -29,23 +31,29 @@
               <li><a class="dropdown-item" href="#">Popular</a></li>
             </ul>
           </div>
-          <div class="row shadow rounded-3 boxes">
-            {% include "posts/base.html" %}
+          {% for post in post_list %}
+          <div class="row shadow rounded-3 py-2 mt-4 boxes">
+              <h1 class="text-center">{{post.title}}</h1>
+              <p>{{post.body}}</p>
+              <p>{{post.slug}}</p>
+              <p>{{post.author}}</p>
+              <p>{{post.created_on}}</p>
           </div>
+          {% endfor %}
         </div>
       </div>
     </div>
-    <div class="col-sm-12 col-md-3 col-lg-4">
-      <div class="friends-suggestions-box boxes shadow rounded-3">
-        <h5 class="text-center">People you may know</h5>
-      </div>
-      <div class="messages-box mt-4 boxes shadow rounded-3">
-        <h5 class="text-start mx-3">Messages</h5>
-      </div>
-      <div class="footer-box mt-4">
-        {% include "footer_small.html" %}
+      <div class="col-sm-12 col-md-3 col-lg-4">
+        <div class="friends-suggestions-box boxes shadow rounded-3">
+          <h5 class="text-center">People you may know</h5>
+        </div>
+        <div class="messages-box mt-4 boxes shadow rounded-3">
+          <h5 class="text-start mx-3">Messages</h5>
+        </div>
+        <div class="footer-box mt-4">
+          {% include "footer_small.html" %}
+        </div>
       </div>
     </div>
   </div>
-</div>
-{% endblock %}
+  {% endblock %}
