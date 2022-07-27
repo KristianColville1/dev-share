@@ -33,64 +33,83 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <nav class="container-fluid navbar navbar-expand-lg sticky-top shadow-sm gy-0">
-    <a class="navbar-brand mx-3" href="{% url 'home' %}">
-      <i class="fa-solid fa-share-nodes"></i> DevShare
-    </a>
-    <button class="navbar-toggler mx-2 text-center" id="menu-toggle" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-x d-none"></i>
-      </span>
-    </button>
-    <div class="collapse navbar-collapse text-center mx-5" id="navbarSupportedContent">
-      <form class="d-flex" role="search">
-        {% csrf_token %}
-        <input class="form-control rounded-3 mx-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn rounded-3" type="submit">Search</button>
-      </form>
-      <ul class="navbar-nav w-100 justify-content-end mx-auto">
-        {% if user.is_authenticated %}
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Friends">
-            <i class="fa-solid fa-user-group"></i>
-          </a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Messages">
-            <i class="fa-solid fa-message"></i>
-          </a>
-        </li>
-        <li class="nav-item mx-3">
-          <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications">
-            <i class="fa-solid fa-bell"></i>
-          </a>
-        </li>
-        <li class="nav-item dropdown" data-toggle="tooltip" data-placement="bottom" title="User settings">
-          <a class="nav-link dropdown-toggle nav-menu" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i>
-          </a>
-          <ul class="dropdown-menu shadow rounded nav-menu-items">
-            <li><a class="dropdown-item" href="#">User Profile</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="{% url 'account_logout' %}">
-              <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
-          </ul>
-        </li>
-        {% else %}
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'account_login' %}">Login</a>
-        </li>
-        {% endif %}
-      </ul>
-    </div>
-  </nav>
+  <div class="nav-bg">
+    <nav class="container navbar navbar-expand-lg sticky-top shadow-sm gy-0 py-0">
+      {% if user.is_authenticated %}
+      <a class="navbar-brand mx-3" href="{% url 'feed' %}">
+        <i class="fa-solid fa-share-nodes"></i> DevShare
+      </a>
+      {% else %}
+      <a class="navbar-brand mx-3" href="{% url 'home' %}">
+        <i class="fa-solid fa-share-nodes"></i> DevShare
+      </a>
+      {% endif %}
+      <button class="navbar-toggler mx-2 text-center" id="menu-toggle" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-x d-none"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse text-center mx-5" id="navbarSupportedContent">
+        <form class="d-flex" role="search">
+          {% csrf_token %}
+          <input class="form-control rounded-3 mx-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn rounded-3" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav w-100 justify-content-end mx-auto d-flex flex-col">
+          {% if user.is_authenticated %}
+          <li class="nav-item mx-3">
+            <a href="{% url 'feed' %}" class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Home">
+              <i class="fa-solid fa-house"></i>
+              <p>Home</p>
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Friends">
+              <i class="fa-solid fa-user-group"></i>
+              <p>Friends</p>
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Messages">
+              <i class="fa-solid fa-message"></i>
+              <p>Messages</p>
+            </a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications">
+              <i class="fa-solid fa-bell"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li class="nav-item dropdown py-1" data-toggle="tooltip" data-placement="bottom" title="User settings">
+            <img class="profile-img-small shadow rounded-circle" src="{% static 'img/blank-profile-picture.png' %}" >
+            <a class="nav-link dropdown-toggle nav-menu py-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Me
+            </a>
+            <ul class="dropdown-menu shadow rounded nav-menu-items">
+              <li><a class="dropdown-item" href="#">User Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="{% url 'account_logout' %}">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+            </ul>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_signup' %}">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
   {% block content %}
   {% endblock %}
   {% if user.is_authenticated%}
@@ -111,6 +130,7 @@
   {% comment %} Custom javascript files {% endcomment %}
   <script src="{% static 'js/forms.js' %}"></script>
   <script src="{% static 'js/menu.js' %}"></script>
+  <script src="{% static 'js/events.js'%}"></script>
 </body>
 
 </html>

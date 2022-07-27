@@ -29,7 +29,6 @@ footer {
 
 form {
     width: fit-content;
-    background-color: var(--);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -59,9 +58,9 @@ a:hover {
 
 /**********************************************************Navigation*/
 
+.nav-bg,
 .navbar {
     background-color: var(--rich-black-fogra-29);
-    transition: color .3s ease-in-out;
     padding: 0;
 }
 
@@ -76,7 +75,11 @@ a:hover {
 
 .nav-item .nav-link {
     color: var(--vivid-sky-blue);
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+.nav-item .nav-link p {
+    font-size: 14px;
 }
 
 .nav-item .nav-link:hover {
@@ -190,17 +193,31 @@ footer a i:hover {
     border-color: transparent;
 }
 
+.post-edit-btn .dropdown-menu,
 .post-type-divider .dropdown-menu {
     color: var(--rich-black-fogra-29);
     background-color: white;
 }
 
+.post-edit-btn .dropdown-item,
 .post-type-divider .dropdown-item {
     color: var(--rich-black-fogra-29);
 }
 
-input.create-post {
+.post-box form {
+    height: 50px;
+}
+
+.post-box form .btn {
+    height: 40px;
+}
+
+.create-post {
+    height: fit-content;
     border: none;
+}
+.create-post:hover {
+    background-color: var(--taupe-gray);
 }
 
 .sort-by {
@@ -211,6 +228,14 @@ input.create-post {
 
 .profile-img {
     height: 100px;
+}
+
+.post-profile-img {
+    height: 40px;
+}
+
+.profile-img-small {
+    height: 25px;
 }
 
 .profile-img img {
@@ -243,10 +268,4 @@ input.create-post {
     padding: 10px;
 }
 
-.post-box form {
-    height: 150px;
-}
 
-.post-box form input {
-    height: 100px;
-}
