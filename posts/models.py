@@ -7,7 +7,7 @@ class Post(models.Model):
   title = models.TextField(max_length=200, unique=True)
   slug = models.SlugField(max_length=200, unique=True)
   author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_posts")
-  body = models.TextField()
+  body = models.TextField(max_length=600)
   created_on = models.DateTimeField(auto_now_add=True)
   updated_on = models.DateTimeField(auto_now_add=True)
   status = models.IntegerField(choices=STATUS, default=0)
@@ -17,10 +17,4 @@ class Post(models.Model):
 
   def __str__(self):
     return self.title
-  
-
-
-
-
-  
   
